@@ -13,6 +13,10 @@ import requests
 load_dotenv()
 
 chrome_options = Options()
+chrome_options.add_argument("--headless")  # Tarayıcıyı görünmez modda çalıştırır
+chrome_options.add_argument("--no-sandbox")  # Sandbox özelliğini devre dışı bırakır
+chrome_options.add_argument("--disable-dev-shm-usage")  # /dev/shm üzerindeki paylaşılan bellek kullanımını devre dışı bırakır
+chrome_options.add_argument("--disable-gpu")
   # Headless mode  # Bazı sistemlerde gereklidir
 # WebDriver'ı başlatıyoruz
 driver = webdriver.Chrome(options=chrome_options)
