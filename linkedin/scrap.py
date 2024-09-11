@@ -14,10 +14,8 @@ load_dotenv()
 
 chrome_options = Options()
   # Headless mode  # Bazı sistemlerde gereklidir
-
-service = Service()
 # WebDriver'ı başlatıyoruz
-driver = webdriver.Chrome(service=service, options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 
 def login():
     linkedin_username = os.getenv('LINKEDIN_USERNAME')
