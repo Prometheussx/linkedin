@@ -1,0 +1,10 @@
+openai
+streamlit
+pandas
+pyperclip
+requests
+selenium
+beautifulsoup4
+python-dotenv
+shutil
+inference-sdk
