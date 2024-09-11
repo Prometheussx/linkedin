@@ -15,7 +15,7 @@ load_dotenv()
 chrome_options = Options()
   # Headless mode  # Bazı sistemlerde gereklidir
 
-service = Service(executable_path="chromedriver.exe")
+service = Service(executable_path="linkedin/chromedriver.exe")
 # WebDriver'ı başlatıyoruz
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
